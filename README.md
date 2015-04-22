@@ -78,6 +78,7 @@ In case you don’t want to use CocoaPods - just copy the file **SwiftSpinner/Sw
 
 ## Project Additions
 **David Bethala**
+
 This project represents my first real leap into Swift programming and iOS development. I chose to contribute to this project due to its completeness and its relative ease of understanding. The following is a summary of my work.
 
 Added a method to change the color of the background blur effect through the use of 'DBImageColorPicker' (https://github.com/d0ping/DBImageColorPicker). Method:
