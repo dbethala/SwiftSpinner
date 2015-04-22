@@ -76,3 +76,24 @@ In case you don’t want to use CocoaPods - just copy the file **SwiftSpinner/Sw
 
 `SwiftSpinner` is available under the MIT license. See the LICENSE file for more info.
 
+## Project Additions
+**David Bethala**
+This project represents my first real leap into Swift programming and iOS development. I chose to contribute to this project due to its completeness and its relative ease of understanding. The following is a summary of my work.
+
+Added a method to change the color of the background blur effect through the use of 'DBImageColorPicker' (https://github.com/d0ping/DBImageColorPicker). Method:
+```swift
+public class func setBlurColor(colorToSet: UIColor){
+...
+}
+```
+will set the blur to whatever color you'd like. DBImageColorPicker was used to extract the primary color from the background images used in the demo application.
+
+Also was trying to work with shapes. Had success with changing the circles into squares, however, they will remain squares until re-run. 
+
+Added method called :
+```swift
+ public class func showWithProgress(title: String, progress: String, animated: Bool = true) {
+ ...
+ }
+ ```
+ which can be used to display the download/upload progress of a network transmission. 
