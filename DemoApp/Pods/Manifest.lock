@@ -1,7 +1,9 @@
 PODS:
-  - SwiftSpinner (0.6.5)
+  - DBImageColorPicker (1.0.5)
+  - SwiftSpinner (0.6.6)
 
 DEPENDENCIES:
+  - DBImageColorPicker (~> 1.0.0)
   - SwiftSpinner (from `..`)
 
 EXTERNAL SOURCES:
@@ -9,6 +11,7 @@ EXTERNAL SOURCES:
     :path: ..
 
 SPEC CHECKSUMS:
-  SwiftSpinner: 2739ae477fa6a377d381c6680f98583f7212ac18
+  DBImageColorPicker: b0b419b0653338544d766ed2008f2558b899fc60
+  SwiftSpinner: a083775a841547fe4ffe03bbfdd84cd43a10c38f
 
 COCOAPODS: 0.36.3

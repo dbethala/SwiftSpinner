@@ -4,4 +4,5 @@ use_frameworks!
 
 target 'SwiftSpinnerDemo', :exclusive => true do
   pod "SwiftSpinner", :path => ".."
+  pod "DBImageColorPicker", "~> 1.0.0"
 end

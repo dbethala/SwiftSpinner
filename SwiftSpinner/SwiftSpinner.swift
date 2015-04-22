@@ -82,6 +82,7 @@ public class SwiftSpinner: UIView {
         innerCircle.strokeEnd = 1.0
         
         vibrancyView.contentView.addSubview(innerCircleView)
+        
     }
     
     // MARK: - Public interface
@@ -107,6 +108,31 @@ public class SwiftSpinner: UIView {
         }
         
         spinner.title = title
+        spinner.animating = animated
+    }
+    
+    //
+    // Show the spinner activity on screen with progress as a percentage, if visible only update the title
+    // -DB
+    public class func showWithProgress(title: String, progress: String, animated: Bool = true) {
+        
+        let window = UIApplication.sharedApplication().windows.first as! UIWindow
+        let spinner = SwiftSpinner.sharedInstance
+        
+        spinner.updateFrame()
+        
+        if spinner.superview == nil {
+            //show the spinner
+            spinner.alpha = 0.0
+            window.addSubview(spinner)
+            
+            UIView.animateWithDuration(0.33, delay: 0.0, options: .CurveEaseOut, animations: {
+                spinner.alpha = 1.0
+                }, completion: nil)
+        }
+        
+        spinner.title = title
+        spinner.progress = progress
         spinner.animating = animated
     }
     
@@ -161,17 +187,153 @@ public class SwiftSpinner: UIView {
             
             let spinner = SwiftSpinner.sharedInstance
             
-            UIView.animateWithDuration(0.15, delay: 0.0, options: .CurveEaseOut, animations: {
+            UIView.animateWithDuration(0.15, delay: 0.75, options: .CurveEaseOut, animations: {
                 spinner.titleLabel.transform = CGAffineTransformMakeScale(0.75, 0.75)
                 spinner.titleLabel.alpha = 0.2
                 }, completion: {_ in
                     spinner.titleLabel.text = self.title
+                    UIView.animateWithDuration(0.35, delay: 0.75, usingSpringWithDamping: 0.35, initialSpringVelocity: 0.0, options: nil, animations: {
+                        spinner.titleLabel.transform = CGAffineTransformIdentity
+                        spinner.titleLabel.alpha = 1.0
+                        }, completion: nil)
+            })
+        }
+    }
+    
+    //
+    // The spinner's download progress (optional) -DB
+    //
+    public var progress: String = "" {
+        didSet {
+            
+            let spinner = SwiftSpinner.sharedInstance
+            
+            UIView.animateWithDuration(0.15, delay: 0.0, options: .CurveEaseOut, animations: {
+                spinner.titleLabel.transform = CGAffineTransformMakeScale(0.75, 0.75)
+                spinner.titleLabel.alpha = 0.2
+                }, completion: {_ in
+                    spinner.titleLabel.text = self.progress
                     UIView.animateWithDuration(0.35, delay: 0.0, usingSpringWithDamping: 0.35, initialSpringVelocity: 0.0, options: nil, animations: {
                         spinner.titleLabel.transform = CGAffineTransformIdentity
                         spinner.titleLabel.alpha = 1.0
                         }, completion: nil)
             })
         }
+    }
+    
+    //
+    // Alter the blur coloring -DB
+    //
+    public class func setBlurColor(colorToSet: UIColor) {
+        let spinner = SwiftSpinner.sharedInstance
+        
+        spinner.blurView.backgroundColor = colorToSet
+    }
+    
+    //
+    // Revert to clear blur -DB
+    //
+    public class func makeBlurClear() {
+        let spinner = SwiftSpinner.sharedInstance
+        
+        spinner.blurView.backgroundColor = UIColor.clearColor()
+    }
+    
+    //
+    //Alter the shape of the spinner to a square -DB
+    //
+    public class func alterShape() {
+        
+        
+        let spinner = SwiftSpinner.sharedInstance
+        
+        //Larger square -DB
+        let largerRect: CGRect = CGRectMake(0.2, 0.2, spinner.frameSize.width, spinner.frameSize.height)
+        let largerCorner: UIRectCorner = UIRectCorner.AllCorners
+        let largerSize: CGSize = CGSizeMake(0.4, 0.4)
+        spinner.outerCircle.path = UIBezierPath(roundedRect: largerRect, byRoundingCorners: largerCorner, cornerRadii: largerSize).CGPath
+        
+        
+        //Smaller square -DB
+        let smallerRect: CGRect = CGRectMake(0.1, 0.1, spinner.frameSize.width, spinner.frameSize.height)
+        let smallerCorner: UIRectCorner = UIRectCorner.AllCorners
+        let smallerSize: CGSize = CGSize(width: 0.2, height: 0.2)
+        spinner.innerCircle.path = UIBezierPath(roundedRect: smallerRect, byRoundingCorners: smallerCorner, cornerRadii: smallerSize).CGPath
+    }
+    
+    public class func makeTriangles() {
+        let spinner = SwiftSpinner.sharedInstance
+        let triangle: UIBezierPath = UIBezierPath()
+        var p1: CGPoint = CGPointMake(spinner.frameSize.width/3+50, spinner.frameSize.height/2+50)
+        var p2: CGPoint = CGPointMake(p1.x+150, p1.y+150)
+        var p3: CGPoint = CGPointMake(p2.x+150, p1.y+150)
+        
+        triangle.moveToPoint(p1)
+        triangle.addLineToPoint(p2)
+        triangle.addLineToPoint(p3)
+        
+        triangle.closePath()
+        
+        spinner.outerCircle.path = triangle.CGPath
+    }
+    
+    
+    //
+    // Revert to circles -DB
+    //
+    public class func revertShapes() {
+        let spinner = SwiftSpinner.sharedInstance
+        
+        spinner.blurEffect = UIBlurEffect(style: spinner.blurEffectStyle)
+        spinner.blurView = UIVisualEffectView(effect: spinner.blurEffect)
+        spinner.addSubview(spinner.blurView)
+        
+        spinner.vibrancyView = UIVisualEffectView(effect: UIVibrancyEffect(forBlurEffect: spinner.blurEffect))
+        spinner.addSubview(spinner.vibrancyView)
+        
+        let titleScale: CGFloat = 0.85
+        spinner.titleLabel.frame.size = CGSize(width: spinner.frameSize.width * titleScale, height: spinner.frameSize.height * titleScale)
+        spinner.titleLabel.font = spinner.defaultTitleFont
+        spinner.titleLabel.numberOfLines = 0
+        spinner.titleLabel.textAlignment = .Center
+        spinner.titleLabel.lineBreakMode = .ByWordWrapping
+        spinner.titleLabel.adjustsFontSizeToFitWidth = true
+        
+        spinner.vibrancyView.contentView.addSubview(spinner.titleLabel)
+        spinner.blurView.contentView.addSubview(spinner.vibrancyView)
+        
+        spinner.outerCircleView.frame.size = spinner.frameSize
+        
+        spinner.outerCircle.path = UIBezierPath(ovalInRect: CGRect(x: 0.0, y: 0.0, width: spinner.frameSize.width, height: spinner.frameSize.height)).CGPath
+        spinner.outerCircle.lineWidth = 8.0
+        spinner.outerCircle.strokeStart = 0.0
+        spinner.outerCircle.strokeEnd = 0.45
+        spinner.outerCircle.lineCap = kCALineCapRound
+        spinner.outerCircle.fillColor = UIColor.clearColor().CGColor
+        spinner.outerCircle.strokeColor = UIColor.whiteColor().CGColor
+        spinner.outerCircleView.layer.addSublayer(spinner.outerCircle)
+        
+        spinner.outerCircle.strokeStart = 0.0
+        spinner.outerCircle.strokeEnd = 1.0
+        
+        spinner.vibrancyView.contentView.addSubview(spinner.outerCircleView)
+        
+        spinner.innerCircleView.frame.size = spinner.frameSize
+        
+        let innerCirclePadding: CGFloat = 12
+        spinner.innerCircle.path = UIBezierPath(ovalInRect: CGRect(x: innerCirclePadding, y: innerCirclePadding, width: spinner.frameSize.width - 2*innerCirclePadding, height: spinner.frameSize.height - 2*innerCirclePadding)).CGPath
+        spinner.innerCircle.lineWidth = 4.0
+        spinner.innerCircle.strokeStart = 0.5
+        spinner.innerCircle.strokeEnd = 0.9
+        spinner.innerCircle.lineCap = kCALineCapRound
+        spinner.innerCircle.fillColor = UIColor.clearColor().CGColor
+        spinner.innerCircle.strokeColor = UIColor.grayColor().CGColor
+        spinner.innerCircleView.layer.addSublayer(spinner.innerCircle)
+        
+        spinner.innerCircle.strokeStart = 0.0
+        spinner.innerCircle.strokeEnd = 1.0
+        
+        spinner.vibrancyView.contentView.addSubview(spinner.innerCircleView)
     }
     
     //

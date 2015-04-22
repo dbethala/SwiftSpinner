@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6724" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="I2R-Xk-T3W">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--SwiftSpinner Demo-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SwiftSpinnerDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -13,20 +13,50 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hurricane_Irene" translatesAutoresizingMaskIntoConstraints="NO" id="dMf-EH-Gph">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Satellite connection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6JV-UQ-3C9">
-                                <rect key="frame" x="150" y="536" width="301.5" height="44"/>
+                                <rect key="frame" x="37" y="603" width="302" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bzl-bh-9QR">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Change Blur" width="110" id="fAu-La-1GF">
+                                        <connections>
+                                            <action selector="setNewblurColor:" destination="vXZ-lx-hvc" id="hMu-2u-F4I"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Revert Blur" width="110" id="Qor-S0-u3h">
+                                        <connections>
+                                            <action selector="makeBlurClearButton:" destination="vXZ-lx-hvc" id="Zcc-J9-Z1y"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Make Squares" width="110" id="FsS-Nz-qHY">
+                                        <connections>
+                                            <action selector="makeIntoSquareButton:" destination="vXZ-lx-hvc" id="V9T-5A-q7Z"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zxa-H5-rbi">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Start SwiftSpinner" width="350" id="c4i-zB-Vmm">
+                                        <connections>
+                                            <action selector="startSpinnerAnimation:" destination="vXZ-lx-hvc" id="fKZ-o6-lbe"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -38,12 +68,262 @@
                             <constraint firstItem="dMf-EH-Gph" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="XEJ-hn-ZI5"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="SwiftSpinner Demo" id="HpS-ZU-vRB">
+                        <barButtonItem key="backBarButtonItem" title="Demo 1" id="jsx-XJ-mw1"/>
+                        <barButtonItem key="rightBarButtonItem" title="Demo 2" id="tOG-Ko-QEy">
+                            <connections>
+                                <segue destination="qel-Ao-Hms" kind="show" id="Qtm-du-XNT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1191.5" y="296.5"/>
+        </scene>
+        <!--Demo 2-->
+        <scene sceneID="9dB-aj-4Ub">
+            <objects>
+                <viewController id="qel-Ao-Hms" customClass="ViewController_BG" customModule="SwiftSpinnerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q96-KV-Meh"/>
+                        <viewControllerLayoutGuide type="bottom" id="mGh-Pq-dQa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iOQ-F1-y9z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZjW-4n-E5N">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Change Blur" width="110" id="Xea-qb-a2K">
+                                        <connections>
+                                            <action selector="changeBlurColor_BG:" destination="qel-Ao-Hms" id="XPa-6Q-1i9"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Revert Blur" width="110" id="W50-vr-fqQ">
+                                        <connections>
+                                            <action selector="buttonMakeBlurClear_BG:" destination="qel-Ao-Hms" id="L3I-Ws-P6V"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Make Squares" width="110" id="ZgJ-tQ-NVI">
+                                        <connections>
+                                            <action selector="makeSquares_BG:" destination="qel-Ao-Hms" id="C9H-7b-BKS"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KbB-8r-bRI">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Start SwiftSpinner" width="350" id="u9p-Jc-yw3">
+                                        <connections>
+                                            <action selector="startSpinnerAnimation_BG:" destination="qel-Ao-Hms" id="9r8-3L-Lmf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="127@2xiphone" translatesAutoresizingMaskIntoConstraints="NO" id="BLV-mj-GKD">
+                                <rect key="frame" x="-121" y="-5" width="643" height="720"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EgS-kY-UKH">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Change Blur" width="110" id="qhc-56-WjM">
+                                        <connections>
+                                            <action selector="changeBlurColor_BG:" destination="qel-Ao-Hms" id="nk3-qN-W4H"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Revert Blur" width="110" id="y1g-cv-Axc">
+                                        <connections>
+                                            <action selector="buttonMakeBlurClear_BG:" destination="qel-Ao-Hms" id="4K4-bs-0Jo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Make Squares" width="110" id="DH5-Yk-NUF">
+                                        <connections>
+                                            <action selector="makeSquares_BG:" destination="qel-Ao-Hms" id="5IM-Qa-IYs"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="478-9C-fPR">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Start SwiftSpinner" width="350" id="Wnj-S7-EGl">
+                                        <connections>
+                                            <action selector="startSpinnerAnimation_BG:" destination="qel-Ao-Hms" id="uQ1-pU-1OX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Demo 2" id="fUb-xe-btf">
+                        <barButtonItem key="backBarButtonItem" title="Demo 2" id="T0Z-OM-Rkm"/>
+                        <barButtonItem key="rightBarButtonItem" title="Demo 3" id="McF-3E-Maz">
+                            <connections>
+                                <segue destination="ZLD-HN-etx" kind="show" id="3Dp-aj-6YB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yGL-XO-BtP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1802.5" y="296.5"/>
+        </scene>
+        <!--Demo 3-->
+        <scene sceneID="on0-xN-7qH">
+            <objects>
+                <viewController id="ZLD-HN-etx" customClass="ViewController_DC" customModule="SwiftSpinnerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZmJ-zN-BeJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="8bQ-cF-3aU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BpZ-JT-h5N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_00010" translatesAutoresizingMaskIntoConstraints="NO" id="I4B-uG-GEs">
+                                <rect key="frame" x="-11" y="64" width="396" height="662"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Rn-6f-sRZ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Change Blur" width="110" id="tlZ-HR-u8h">
+                                        <connections>
+                                            <action selector="setBlurColor_DC:" destination="ZLD-HN-etx" id="RcF-iN-4YN"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Revert Blur" width="110" id="oRd-xZ-aeX">
+                                        <connections>
+                                            <action selector="makeBlurClearButton_DC:" destination="ZLD-HN-etx" id="6bG-La-O8B"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Make Squares" width="110" id="19D-cQ-348">
+                                        <connections>
+                                            <action selector="makeSquares_DC:" destination="ZLD-HN-etx" id="VuU-rn-G8D"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pgj-Q5-1oZ">
+                                <rect key="frame" x="0.0" y="628" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Start SwiftSpinner" width="350" id="2Y2-5h-ycT">
+                                        <connections>
+                                            <action selector="startSpinnerAnimation_DC:" destination="ZLD-HN-etx" id="uJh-vG-kcC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Demo 3" id="FBs-5u-1d7">
+                        <barButtonItem key="backBarButtonItem" title="Demo 3" id="nxb-W9-Guc"/>
+                        <barButtonItem key="rightBarButtonItem" title="Demo 4" id="Xex-Uf-TCm">
+                            <connections>
+                                <segue destination="DWZ-Ah-ZuM" kind="show" id="MFd-rC-Vqk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vnl-je-Lqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2385.5" y="296.5"/>
+        </scene>
+        <!--Demo 4-->
+        <scene sceneID="D2F-Rx-HU0">
+            <objects>
+                <viewController id="DWZ-Ah-ZuM" customClass="ViewController_MCB" customModule="SwiftSpinnerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ECI-me-NXy"/>
+                        <viewControllerLayoutGuide type="bottom" id="3e9-RR-CXL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sR6-c3-l3n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_00002" translatesAutoresizingMaskIntoConstraints="NO" id="3KU-1K-msK">
+                                <rect key="frame" x="-6" y="0.0" width="386" height="667"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jMc-eW-rbQ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Change Blur" width="110" id="vYx-M6-NQu">
+                                        <connections>
+                                            <action selector="changeBlurButton_MCB:" destination="DWZ-Ah-ZuM" id="0OJ-h4-eG6"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Revert Blur" width="110" id="QSQ-Ca-HcD">
+                                        <connections>
+                                            <action selector="revertBlurButton_MCB:" destination="DWZ-Ah-ZuM" id="PYU-Qf-6qq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Make Squares" width="110" id="pw0-yF-29W">
+                                        <connections>
+                                            <action selector="makeSquaresButton_MCB:" destination="DWZ-Ah-ZuM" id="n3D-G1-HUN"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hz-9U-cBr">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Start SwiftSpinner" width="350" id="Q5i-AY-Zxx">
+                                        <connections>
+                                            <action selector="startSpinnerAnimation_MCB:" destination="DWZ-Ah-ZuM" id="BvY-eY-IWd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Demo 4" id="RJV-6i-1J0">
+                        <barButtonItem key="backBarButtonItem" title="Demo 4" id="GCc-yg-NDg"/>
+                        <barButtonItem key="rightBarButtonItem" title="Demo 1" id="ypD-aN-6Ji">
+                            <connections>
+                                <segue destination="vXZ-lx-hvc" kind="show" id="W5J-Z0-Le1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8bA-fx-eKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2906.5" y="296.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="711-iH-yBl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I2R-Xk-T3W" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9uW-JM-vzr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="zW7-uF-YMa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="khs-uB-RY9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="336" y="-430"/>
         </scene>
     </scenes>
     <resources>
+        <image name="127@2xiphone" width="744" height="1392"/>
         <image name="Hurricane_Irene" width="1024" height="1024"/>
+        <image name="img_00002" width="1080" height="1080"/>
+        <image name="img_00010" width="900" height="900"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="zW7-uF-YMa"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -7,208 +7,289 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		127865071EC686D1C8919ADB /* Pods-SwiftSpinnerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4DD18D61150ABAA0C01263 /* Pods-SwiftSpinnerDemo-dummy.m */; };
-		68BC6DA54B8A536B4582282F /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84485ACF5E6BB95D59C558 /* SwiftSpinner.swift */; };
-		773C966743863C9A363414DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57FA917D27CAC66576D76AD5 /* UIKit.framework */; };
-		9A14C4BD837AD9F445A83580 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92FD0B3C17C321D1EA179F3F /* Foundation.framework */; };
-		C2256C5F95CC3B941BCD32E0 /* Pods-SwiftSpinnerDemo-SwiftSpinner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 402AD908C490A5D4B25B0F57 /* Pods-SwiftSpinnerDemo-SwiftSpinner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC1506D7713B28BB56288D02 /* Pods-SwiftSpinnerDemo-SwiftSpinner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B2311BEBDDB0A84E1521CF /* Pods-SwiftSpinnerDemo-SwiftSpinner-dummy.m */; };
-		F882FB79E6D445DCF85D7B4E /* Pods-SwiftSpinnerDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F290EC67BC114B629B3D8B7 /* Pods-SwiftSpinnerDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FEB6BCFC71015631DDE0E796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92FD0B3C17C321D1EA179F3F /* Foundation.framework */; };
+		085C3AB567E4A16C972A0C28 /* DBImageColorPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EB85EBE18DA34F7ADC713E1 /* DBImageColorPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C2B976538385BE015879E3D /* Pods-SwiftSpinnerDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD84642A705E0B35D5A98B81 /* Pods-SwiftSpinnerDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30952852A1AB5D4486025395 /* Pods-SwiftSpinnerDemo-DBImageColorPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4216172BE4F8D7622530DEAC /* Pods-SwiftSpinnerDemo-DBImageColorPicker-dummy.m */; };
+		40E1E3DD8CB6B919A884A611 /* Pods-SwiftSpinnerDemo-SwiftSpinner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1353CEDAA28E0F54AEE2A95 /* Pods-SwiftSpinnerDemo-SwiftSpinner-dummy.m */; };
+		471672DB749A88EE8783F4E9 /* Pods-SwiftSpinnerDemo-SwiftSpinner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B3D8DAAE2EA193ADB14313E /* Pods-SwiftSpinnerDemo-SwiftSpinner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62C34A2F7492A24D071F4C3A /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83083287413716EDEDA1CC29 /* SwiftSpinner.swift */; };
+		8317846AEE5DF74FF50F3B6D /* DBImageColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA9EFD409044A227DA71964 /* DBImageColorPicker.m */; };
+		83B8C316A5B5132C433E4EB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953F638FCC53098A65E97FD2 /* UIKit.framework */; };
+		9B34A22EFDA5E6968254FEB1 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0BB6D6FA735057845C186 /* UIImage+Color.m */; };
+		9E6782BF73057837E7BD0D18 /* Pods-SwiftSpinnerDemo-DBImageColorPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F347AD403E41AE188543892C /* Pods-SwiftSpinnerDemo-DBImageColorPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D90ADEA7AF43E492FABF7DDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDC5BA1205DCE3859D15252 /* Foundation.framework */; };
+		DE5C2D65D69405770E02D105 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDC5BA1205DCE3859D15252 /* Foundation.framework */; };
+		ECDA0DEA9819ED1A6A686098 /* UIImage+Color.h in Headers */ = {isa = PBXBuildFile; fileRef = B99ACFE2BAEF1E904A5A6A95 /* UIImage+Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F07CF14D5E9247B2594BAED6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDC5BA1205DCE3859D15252 /* Foundation.framework */; };
+		F8C6AF489F9D85171E57B1AD /* Pods-SwiftSpinnerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF63117C09E36715735D92E /* Pods-SwiftSpinnerDemo-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AD545B14699090D315260F18 /* PBXContainerItemProxy */ = {
+		81932C2ACADF61086BBA3DC0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 284DCEBF2F703C6415D006EF /* Project object */;
+			containerPortal = 41E995A2F37B04199897CDA4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 79E13F6889BDD44FE8F01D38;
+			remoteGlobalIDString = 9A8344332146B3383CDABB59;
+			remoteInfo = "Pods-SwiftSpinnerDemo-DBImageColorPicker";
+		};
+		AE64AD1AF98750209FD33859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41E995A2F37B04199897CDA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 878D4A7BBFC4900A3A5CA9A8;
 			remoteInfo = "Pods-SwiftSpinnerDemo-SwiftSpinner";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0766774C56683D75264D0DF4 /* Pods-SwiftSpinnerDemo-SwiftSpinner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftSpinnerDemo-SwiftSpinner.modulemap"; sourceTree = "<group>"; };
-		136D5089CF6A5151B0EF5205 /* Pods-SwiftSpinnerDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftSpinnerDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		177CEF86F43DB8B94D37773B /* SwiftSpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		23F7F0AC79C8D819D188A077 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A7758064FE8E4B46FCA7367 /* Pods_SwiftSpinnerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSpinnerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		402AD908C490A5D4B25B0F57 /* Pods-SwiftSpinnerDemo-SwiftSpinner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftSpinnerDemo-SwiftSpinner-umbrella.h"; sourceTree = "<group>"; };
-		4C4635F4510C086DA8E7208B /* Pods-SwiftSpinnerDemo-SwiftSpinner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftSpinnerDemo-SwiftSpinner-prefix.pch"; sourceTree = "<group>"; };
-		57FA917D27CAC66576D76AD5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		58B0E52888F05332E98C03BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5EBE302A3CFF39CC8191694B /* Pods-SwiftSpinnerDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftSpinnerDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		618EF1D2216193B8961E3490 /* Pods-SwiftSpinnerDemo-SwiftSpinner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftSpinnerDemo-SwiftSpinner.xcconfig"; sourceTree = "<group>"; };
-		7F290EC67BC114B629B3D8B7 /* Pods-SwiftSpinnerDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftSpinnerDemo-umbrella.h"; sourceTree = "<group>"; };
-		8D84485ACF5E6BB95D59C558 /* SwiftSpinner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
-		92FD0B3C17C321D1EA179F3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A2B2311BEBDDB0A84E1521CF /* Pods-SwiftSpinnerDemo-SwiftSpinner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftSpinnerDemo-SwiftSpinner-dummy.m"; sourceTree = "<group>"; };
-		AE038A3AB8AED845FC7652F3 /* Pods-SwiftSpinnerDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftSpinnerDemo.modulemap"; sourceTree = "<group>"; };
-		B6FAE3514545CD31C01707FD /* Pods-SwiftSpinnerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftSpinnerDemo.release.xcconfig"; sourceTree = "<group>"; };
-		D0395556D57E013FCD3DCDB8 /* Pods-SwiftSpinnerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftSpinnerDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		D8EBA88F0A952D1E4C7EDEC3 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		DF4DD18D61150ABAA0C01263 /* Pods-SwiftSpinnerDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftSpinnerDemo-dummy.m"; sourceTree = "<group>"; };
-		E0AAAFBBFE26D3F4A24D22D6 /* Pods-SwiftSpinnerDemo-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftSpinnerDemo-environment.h"; sourceTree = "<group>"; };
-		E2828BE1A0791172D17E34EB /* Pods-SwiftSpinnerDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftSpinnerDemo-frameworks.sh"; sourceTree = "<group>"; };
-		E9063D490922F109781728C6 /* Pods-SwiftSpinnerDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftSpinnerDemo-resources.sh"; sourceTree = "<group>"; };
-		F86668222232AFA0A83E9EDF /* Pods-SwiftSpinnerDemo-SwiftSpinner-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftSpinnerDemo-SwiftSpinner-Private.xcconfig"; sourceTree = "<group>"; };
+		025B4A5B37D47820F8930306 /* Pods-SwiftSpinnerDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftSpinnerDemo-frameworks.sh"; sourceTree = "<group>"; };
+		0901C4D0F57087D0340C055A /* Pods-SwiftSpinnerDemo-DBImageColorPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftSpinnerDemo-DBImageColorPicker.xcconfig"; sourceTree = "<group>"; };
+		22C1F7A923118ABF63A1BECA /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		23840DCA02016ACE603C11F7 /* Pods-SwiftSpinnerDemo-SwiftSpinner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftSpinnerDemo-SwiftSpinner-prefix.pch"; sourceTree = "<group>"; };
+		28600FCAC8B75264C30EA91E /* Pods-SwiftSpinnerDemo-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftSpinnerDemo-environment.h"; sourceTree = "<group>"; };
+		2EE0FED55AB301B198CA6831 /* Pods-SwiftSpinnerDemo-SwiftSpinner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftSpinnerDemo-SwiftSpinner.modulemap"; sourceTree = "<group>"; };
+		38F48F1CA292F037939B4006 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4216172BE4F8D7622530DEAC /* Pods-SwiftSpinnerDemo-DBImageColorPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftSpinnerDemo-DBImageColorPicker-dummy.m"; sourceTree = "<group>"; };
+		4B3D8DAAE2EA193ADB14313E /* Pods-SwiftSpinnerDemo-SwiftSpinner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftSpinnerDemo-SwiftSpinner-umbrella.h"; sourceTree = "<group>"; };
+		4D06F54710AEEBE949035A1D /* Pods-SwiftSpinnerDemo-DBImageColorPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftSpinnerDemo-DBImageColorPicker.modulemap"; sourceTree = "<group>"; };
+		5AA0BB6D6FA735057845C186 /* UIImage+Color.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Color.m"; path = "Source/UIImage+Color.m"; sourceTree = "<group>"; };
+		63440A20193FE48E6643F5C6 /* Pods-SwiftSpinnerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftSpinnerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6B6A90F7C1E39CB1690C934D /* DBImageColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DBImageColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BD02CDCFD970F50311A525B /* Pods-SwiftSpinnerDemo-DBImageColorPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftSpinnerDemo-DBImageColorPicker-prefix.pch"; sourceTree = "<group>"; };
+		6BF63117C09E36715735D92E /* Pods-SwiftSpinnerDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftSpinnerDemo-dummy.m"; sourceTree = "<group>"; };
+		6E1B354A96197906ED5FFC5A /* Pods-SwiftSpinnerDemo-SwiftSpinner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftSpinnerDemo-SwiftSpinner.xcconfig"; sourceTree = "<group>"; };
+		6EB85EBE18DA34F7ADC713E1 /* DBImageColorPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBImageColorPicker.h; path = Source/DBImageColorPicker.h; sourceTree = "<group>"; };
+		700DF38B69F49F2AA79E5AE9 /* Pods-SwiftSpinnerDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftSpinnerDemo.modulemap"; sourceTree = "<group>"; };
+		794CFFD033AD31A17F154C35 /* Pods-SwiftSpinnerDemo-DBImageColorPicker-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftSpinnerDemo-DBImageColorPicker-Private.xcconfig"; sourceTree = "<group>"; };
+		7C4FC54241772F0CB06F8AFA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8150FF362FC17B8EBBB7C9A0 /* Pods-SwiftSpinnerDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftSpinnerDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		83083287413716EDEDA1CC29 /* SwiftSpinner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
+		95371B4F507ECB47252B91EA /* Pods-SwiftSpinnerDemo-SwiftSpinner-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftSpinnerDemo-SwiftSpinner-Private.xcconfig"; sourceTree = "<group>"; };
+		953F638FCC53098A65E97FD2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		AB319EDBADD4F35906206F7D /* Pods_SwiftSpinnerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSpinnerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0C82F0CCEC4881029EF1E8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD84642A705E0B35D5A98B81 /* Pods-SwiftSpinnerDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftSpinnerDemo-umbrella.h"; sourceTree = "<group>"; };
+		B7AD28BFFA64E63746DC86AA /* SwiftSpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B99ACFE2BAEF1E904A5A6A95 /* UIImage+Color.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Color.h"; path = "Source/UIImage+Color.h"; sourceTree = "<group>"; };
+		C1353CEDAA28E0F54AEE2A95 /* Pods-SwiftSpinnerDemo-SwiftSpinner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftSpinnerDemo-SwiftSpinner-dummy.m"; sourceTree = "<group>"; };
+		C43370CDEA5F9E0835DDC8FE /* Pods-SwiftSpinnerDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftSpinnerDemo-resources.sh"; sourceTree = "<group>"; };
+		CEA9EFD409044A227DA71964 /* DBImageColorPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBImageColorPicker.m; path = Source/DBImageColorPicker.m; sourceTree = "<group>"; };
+		D50D58807685B22B6842F60C /* Pods-SwiftSpinnerDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftSpinnerDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EFDC5BA1205DCE3859D15252 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F19C1F3C91FA3F08F6ADDCAC /* Pods-SwiftSpinnerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftSpinnerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F347AD403E41AE188543892C /* Pods-SwiftSpinnerDemo-DBImageColorPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftSpinnerDemo-DBImageColorPicker-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		03AE3441B27B043C3379074D /* Frameworks */ = {
+		5E8E730378CB19E557BD5978 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEB6BCFC71015631DDE0E796 /* Foundation.framework in Frameworks */,
-				773C966743863C9A363414DF /* UIKit.framework in Frameworks */,
+				F07CF14D5E9247B2594BAED6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		73335D3F006C7C0AEC3E77F4 /* Frameworks */ = {
+		64FEB81AADC08E9220A48596 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A14C4BD837AD9F445A83580 /* Foundation.framework in Frameworks */,
+				D90ADEA7AF43E492FABF7DDD /* Foundation.framework in Frameworks */,
+				83B8C316A5B5132C433E4EB3 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		890C48D8527FE68C94376E70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5C2D65D69405770E02D105 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0245BCB5E0B41B9AB5994A45 /* iOS */ = {
+		209BEBFDF872008A3A104C88 = {
 			isa = PBXGroup;
 			children = (
-				92FD0B3C17C321D1EA179F3F /* Foundation.framework */,
-				57FA917D27CAC66576D76AD5 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		593C215502A6BF6C7AB0D0E8 /* SwiftSpinner */ = {
-			isa = PBXGroup;
-			children = (
-				8D84485ACF5E6BB95D59C558 /* SwiftSpinner.swift */,
-			);
-			path = SwiftSpinner;
-			sourceTree = "<group>";
-		};
-		5FBD09D9749DC3D84725F7BA /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E3E9FE30238B46A45CD25C32 /* Pods-SwiftSpinnerDemo */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		8D9DF56BA826079FD3B9F4CE /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				23F7F0AC79C8D819D188A077 /* Info.plist */,
-				0766774C56683D75264D0DF4 /* Pods-SwiftSpinnerDemo-SwiftSpinner.modulemap */,
-				618EF1D2216193B8961E3490 /* Pods-SwiftSpinnerDemo-SwiftSpinner.xcconfig */,
-				F86668222232AFA0A83E9EDF /* Pods-SwiftSpinnerDemo-SwiftSpinner-Private.xcconfig */,
-				A2B2311BEBDDB0A84E1521CF /* Pods-SwiftSpinnerDemo-SwiftSpinner-dummy.m */,
-				4C4635F4510C086DA8E7208B /* Pods-SwiftSpinnerDemo-SwiftSpinner-prefix.pch */,
-				402AD908C490A5D4B25B0F57 /* Pods-SwiftSpinnerDemo-SwiftSpinner-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "DemoApp/Pods/Target Support Files/Pods-SwiftSpinnerDemo-SwiftSpinner";
-			sourceTree = "<group>";
-		};
-		992FC0B298CBAD95B3C3E1F7 = {
-			isa = PBXGroup;
-			children = (
-				D8EBA88F0A952D1E4C7EDEC3 /* Podfile */,
-				D77F822ACB92869B5DEA5079 /* Development Pods */,
-				CF11396314C40DB9CBBECD86 /* Frameworks */,
-				CEDC6F643AF3130591208784 /* Products */,
-				5FBD09D9749DC3D84725F7BA /* Targets Support Files */,
+				22C1F7A923118ABF63A1BECA /* Podfile */,
+				B93E1507C54BA9A98DAC1BB6 /* Development Pods */,
+				DF31ACF39EDA9D9C73F963BB /* Frameworks */,
+				B8CABC2F58D22515EAE3A4EE /* Pods */,
+				265F8815FB74B63F9F18DD64 /* Products */,
+				E9B42D1117A514C499D0295E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A6919154388CC4768F129DFA /* SwiftSpinner */ = {
+		24823FE90B96ADB95D7AA1ED /* DBImageColorPicker */ = {
 			isa = PBXGroup;
 			children = (
-				8D9DF56BA826079FD3B9F4CE /* Support Files */,
-				593C215502A6BF6C7AB0D0E8 /* SwiftSpinner */,
+				6EB85EBE18DA34F7ADC713E1 /* DBImageColorPicker.h */,
+				CEA9EFD409044A227DA71964 /* DBImageColorPicker.m */,
+				B99ACFE2BAEF1E904A5A6A95 /* UIImage+Color.h */,
+				5AA0BB6D6FA735057845C186 /* UIImage+Color.m */,
+				8E62246AAC0D7A6A89D39129 /* Support Files */,
 			);
-			name = SwiftSpinner;
-			path = ../..;
+			path = DBImageColorPicker;
 			sourceTree = "<group>";
 		};
-		CEDC6F643AF3130591208784 /* Products */ = {
+		265F8815FB74B63F9F18DD64 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2A7758064FE8E4B46FCA7367 /* Pods_SwiftSpinnerDemo.framework */,
-				177CEF86F43DB8B94D37773B /* SwiftSpinner.framework */,
+				6B6A90F7C1E39CB1690C934D /* DBImageColorPicker.framework */,
+				AB319EDBADD4F35906206F7D /* Pods_SwiftSpinnerDemo.framework */,
+				B7AD28BFFA64E63746DC86AA /* SwiftSpinner.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CF11396314C40DB9CBBECD86 /* Frameworks */ = {
+		2A2DFC8207DF0A3BB0A8F75D /* Pods-SwiftSpinnerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0245BCB5E0B41B9AB5994A45 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D77F822ACB92869B5DEA5079 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A6919154388CC4768F129DFA /* SwiftSpinner */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		E3E9FE30238B46A45CD25C32 /* Pods-SwiftSpinnerDemo */ = {
-			isa = PBXGroup;
-			children = (
-				58B0E52888F05332E98C03BA /* Info.plist */,
-				AE038A3AB8AED845FC7652F3 /* Pods-SwiftSpinnerDemo.modulemap */,
-				136D5089CF6A5151B0EF5205 /* Pods-SwiftSpinnerDemo-acknowledgements.markdown */,
-				5EBE302A3CFF39CC8191694B /* Pods-SwiftSpinnerDemo-acknowledgements.plist */,
-				DF4DD18D61150ABAA0C01263 /* Pods-SwiftSpinnerDemo-dummy.m */,
-				E0AAAFBBFE26D3F4A24D22D6 /* Pods-SwiftSpinnerDemo-environment.h */,
-				E2828BE1A0791172D17E34EB /* Pods-SwiftSpinnerDemo-frameworks.sh */,
-				E9063D490922F109781728C6 /* Pods-SwiftSpinnerDemo-resources.sh */,
-				7F290EC67BC114B629B3D8B7 /* Pods-SwiftSpinnerDemo-umbrella.h */,
-				D0395556D57E013FCD3DCDB8 /* Pods-SwiftSpinnerDemo.debug.xcconfig */,
-				B6FAE3514545CD31C01707FD /* Pods-SwiftSpinnerDemo.release.xcconfig */,
+				7C4FC54241772F0CB06F8AFA /* Info.plist */,
+				700DF38B69F49F2AA79E5AE9 /* Pods-SwiftSpinnerDemo.modulemap */,
+				D50D58807685B22B6842F60C /* Pods-SwiftSpinnerDemo-acknowledgements.markdown */,
+				8150FF362FC17B8EBBB7C9A0 /* Pods-SwiftSpinnerDemo-acknowledgements.plist */,
+				6BF63117C09E36715735D92E /* Pods-SwiftSpinnerDemo-dummy.m */,
+				28600FCAC8B75264C30EA91E /* Pods-SwiftSpinnerDemo-environment.h */,
+				025B4A5B37D47820F8930306 /* Pods-SwiftSpinnerDemo-frameworks.sh */,
+				C43370CDEA5F9E0835DDC8FE /* Pods-SwiftSpinnerDemo-resources.sh */,
+				AD84642A705E0B35D5A98B81 /* Pods-SwiftSpinnerDemo-umbrella.h */,
+				F19C1F3C91FA3F08F6ADDCAC /* Pods-SwiftSpinnerDemo.debug.xcconfig */,
+				63440A20193FE48E6643F5C6 /* Pods-SwiftSpinnerDemo.release.xcconfig */,
 			);
 			name = "Pods-SwiftSpinnerDemo";
 			path = "Target Support Files/Pods-SwiftSpinnerDemo";
 			sourceTree = "<group>";
 		};
+		39E25F391AE51790F5396CFA /* SwiftSpinner */ = {
+			isa = PBXGroup;
+			children = (
+				69CA0A18F6FF6015E29893F1 /* Support Files */,
+				C0853A318F58D7B4FA2496F1 /* SwiftSpinner */,
+			);
+			name = SwiftSpinner;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		699BAB3BE362D26D74221326 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EFDC5BA1205DCE3859D15252 /* Foundation.framework */,
+				953F638FCC53098A65E97FD2 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		69CA0A18F6FF6015E29893F1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				38F48F1CA292F037939B4006 /* Info.plist */,
+				2EE0FED55AB301B198CA6831 /* Pods-SwiftSpinnerDemo-SwiftSpinner.modulemap */,
+				6E1B354A96197906ED5FFC5A /* Pods-SwiftSpinnerDemo-SwiftSpinner.xcconfig */,
+				95371B4F507ECB47252B91EA /* Pods-SwiftSpinnerDemo-SwiftSpinner-Private.xcconfig */,
+				C1353CEDAA28E0F54AEE2A95 /* Pods-SwiftSpinnerDemo-SwiftSpinner-dummy.m */,
+				23840DCA02016ACE603C11F7 /* Pods-SwiftSpinnerDemo-SwiftSpinner-prefix.pch */,
+				4B3D8DAAE2EA193ADB14313E /* Pods-SwiftSpinnerDemo-SwiftSpinner-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "DemoApp/Pods/Target Support Files/Pods-SwiftSpinnerDemo-SwiftSpinner";
+			sourceTree = "<group>";
+		};
+		8E62246AAC0D7A6A89D39129 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC0C82F0CCEC4881029EF1E8 /* Info.plist */,
+				4D06F54710AEEBE949035A1D /* Pods-SwiftSpinnerDemo-DBImageColorPicker.modulemap */,
+				0901C4D0F57087D0340C055A /* Pods-SwiftSpinnerDemo-DBImageColorPicker.xcconfig */,
+				794CFFD033AD31A17F154C35 /* Pods-SwiftSpinnerDemo-DBImageColorPicker-Private.xcconfig */,
+				4216172BE4F8D7622530DEAC /* Pods-SwiftSpinnerDemo-DBImageColorPicker-dummy.m */,
+				6BD02CDCFD970F50311A525B /* Pods-SwiftSpinnerDemo-DBImageColorPicker-prefix.pch */,
+				F347AD403E41AE188543892C /* Pods-SwiftSpinnerDemo-DBImageColorPicker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-SwiftSpinnerDemo-DBImageColorPicker";
+			sourceTree = "<group>";
+		};
+		B8CABC2F58D22515EAE3A4EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24823FE90B96ADB95D7AA1ED /* DBImageColorPicker */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B93E1507C54BA9A98DAC1BB6 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39E25F391AE51790F5396CFA /* SwiftSpinner */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C0853A318F58D7B4FA2496F1 /* SwiftSpinner */ = {
+			isa = PBXGroup;
+			children = (
+				83083287413716EDEDA1CC29 /* SwiftSpinner.swift */,
+			);
+			path = SwiftSpinner;
+			sourceTree = "<group>";
+		};
+		DF31ACF39EDA9D9C73F963BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				699BAB3BE362D26D74221326 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9B42D1117A514C499D0295E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A2DFC8207DF0A3BB0A8F75D /* Pods-SwiftSpinnerDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		103D434BFC365C4A748903AA /* Headers */ = {
+		006D534EC48B67F784E45491 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F882FB79E6D445DCF85D7B4E /* Pods-SwiftSpinnerDemo-umbrella.h in Headers */,
+				471672DB749A88EE8783F4E9 /* Pods-SwiftSpinnerDemo-SwiftSpinner-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4A7C48D150E40997A3472D7E /* Headers */ = {
+		D2805BE2DFA5709628CA7964 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2256C5F95CC3B941BCD32E0 /* Pods-SwiftSpinnerDemo-SwiftSpinner-umbrella.h in Headers */,
+				0C2B976538385BE015879E3D /* Pods-SwiftSpinnerDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0407EE31E450965C59A5D3B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085C3AB567E4A16C972A0C28 /* DBImageColorPicker.h in Headers */,
+				9E6782BF73057837E7BD0D18 /* Pods-SwiftSpinnerDemo-DBImageColorPicker-umbrella.h in Headers */,
+				ECDA0DEA9819ED1A6A686098 /* UIImage+Color.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		79E13F6889BDD44FE8F01D38 /* Pods-SwiftSpinnerDemo-SwiftSpinner */ = {
+		878D4A7BBFC4900A3A5CA9A8 /* Pods-SwiftSpinnerDemo-SwiftSpinner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 182B67B52D7DE14EB90A8809 /* Build configuration list for PBXNativeTarget "Pods-SwiftSpinnerDemo-SwiftSpinner" */;
+			buildConfigurationList = 5183000FAE8DDF0C7C026FBC /* Build configuration list for PBXNativeTarget "Pods-SwiftSpinnerDemo-SwiftSpinner" */;
 			buildPhases = (
-				65E8269959790D9ACD9A447B /* Sources */,
-				03AE3441B27B043C3379074D /* Frameworks */,
-				4A7C48D150E40997A3472D7E /* Headers */,
+				01DEE96D0F8B1D64FC906F2F /* Sources */,
+				64FEB81AADC08E9220A48596 /* Frameworks */,
+				006D534EC48B67F784E45491 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -216,84 +297,176 @@
 			);
 			name = "Pods-SwiftSpinnerDemo-SwiftSpinner";
 			productName = "Pods-SwiftSpinnerDemo-SwiftSpinner";
-			productReference = 177CEF86F43DB8B94D37773B /* SwiftSpinner.framework */;
+			productReference = B7AD28BFFA64E63746DC86AA /* SwiftSpinner.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B64FDD83613E270AC28C97EB /* Pods-SwiftSpinnerDemo */ = {
+		9A8344332146B3383CDABB59 /* Pods-SwiftSpinnerDemo-DBImageColorPicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79CE17A9E73D4DACF9C209C9 /* Build configuration list for PBXNativeTarget "Pods-SwiftSpinnerDemo" */;
+			buildConfigurationList = B84A7DA244D68B5D63D097AD /* Build configuration list for PBXNativeTarget "Pods-SwiftSpinnerDemo-DBImageColorPicker" */;
 			buildPhases = (
-				D1A270AAB5D4B98FB334FBA4 /* Sources */,
-				73335D3F006C7C0AEC3E77F4 /* Frameworks */,
-				103D434BFC365C4A748903AA /* Headers */,
+				FDA453F81EF50AEC2EBE99BD /* Sources */,
+				890C48D8527FE68C94376E70 /* Frameworks */,
+				F0407EE31E450965C59A5D3B /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8AFB1E2CA9349BD4324C4AEA /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftSpinnerDemo-DBImageColorPicker";
+			productName = "Pods-SwiftSpinnerDemo-DBImageColorPicker";
+			productReference = 6B6A90F7C1E39CB1690C934D /* DBImageColorPicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C85B450F8F779862964404C5 /* Pods-SwiftSpinnerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7196886C6DF0BF207763CDDC /* Build configuration list for PBXNativeTarget "Pods-SwiftSpinnerDemo" */;
+			buildPhases = (
+				4C81E24E8A3A4F401B9BA12B /* Sources */,
+				5E8E730378CB19E557BD5978 /* Frameworks */,
+				D2805BE2DFA5709628CA7964 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0434A7C31509377C9513F2C2 /* PBXTargetDependency */,
+				6F6B24D3103E5AA69E7036ED /* PBXTargetDependency */,
 			);
 			name = "Pods-SwiftSpinnerDemo";
 			productName = "Pods-SwiftSpinnerDemo";
-			productReference = 2A7758064FE8E4B46FCA7367 /* Pods_SwiftSpinnerDemo.framework */;
+			productReference = AB319EDBADD4F35906206F7D /* Pods_SwiftSpinnerDemo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		284DCEBF2F703C6415D006EF /* Project object */ = {
+		41E995A2F37B04199897CDA4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 39A24ED01F24934574A7C80C /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 018E7B3311EB4DD1E58D3E40 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 992FC0B298CBAD95B3C3E1F7;
-			productRefGroup = CEDC6F643AF3130591208784 /* Products */;
+			mainGroup = 209BEBFDF872008A3A104C88;
+			productRefGroup = 265F8815FB74B63F9F18DD64 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B64FDD83613E270AC28C97EB /* Pods-SwiftSpinnerDemo */,
-				79E13F6889BDD44FE8F01D38 /* Pods-SwiftSpinnerDemo-SwiftSpinner */,
+				C85B450F8F779862964404C5 /* Pods-SwiftSpinnerDemo */,
+				9A8344332146B3383CDABB59 /* Pods-SwiftSpinnerDemo-DBImageColorPicker */,
+				878D4A7BBFC4900A3A5CA9A8 /* Pods-SwiftSpinnerDemo-SwiftSpinner */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		65E8269959790D9ACD9A447B /* Sources */ = {
+		01DEE96D0F8B1D64FC906F2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC1506D7713B28BB56288D02 /* Pods-SwiftSpinnerDemo-SwiftSpinner-dummy.m in Sources */,
-				68BC6DA54B8A536B4582282F /* SwiftSpinner.swift in Sources */,
+				40E1E3DD8CB6B919A884A611 /* Pods-SwiftSpinnerDemo-SwiftSpinner-dummy.m in Sources */,
+				62C34A2F7492A24D071F4C3A /* SwiftSpinner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D1A270AAB5D4B98FB334FBA4 /* Sources */ = {
+		4C81E24E8A3A4F401B9BA12B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				127865071EC686D1C8919ADB /* Pods-SwiftSpinnerDemo-dummy.m in Sources */,
+				F8C6AF489F9D85171E57B1AD /* Pods-SwiftSpinnerDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA453F81EF50AEC2EBE99BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8317846AEE5DF74FF50F3B6D /* DBImageColorPicker.m in Sources */,
+				30952852A1AB5D4486025395 /* Pods-SwiftSpinnerDemo-DBImageColorPicker-dummy.m in Sources */,
+				9B34A22EFDA5E6968254FEB1 /* UIImage+Color.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8AFB1E2CA9349BD4324C4AEA /* PBXTargetDependency */ = {
+		0434A7C31509377C9513F2C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SwiftSpinnerDemo-DBImageColorPicker";
+			target = 9A8344332146B3383CDABB59 /* Pods-SwiftSpinnerDemo-DBImageColorPicker */;
+			targetProxy = 81932C2ACADF61086BBA3DC0 /* PBXContainerItemProxy */;
+		};
+		6F6B24D3103E5AA69E7036ED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-SwiftSpinnerDemo-SwiftSpinner";
-			target = 79E13F6889BDD44FE8F01D38 /* Pods-SwiftSpinnerDemo-SwiftSpinner */;
-			targetProxy = AD545B14699090D315260F18 /* PBXContainerItemProxy */;
+			target = 878D4A7BBFC4900A3A5CA9A8 /* Pods-SwiftSpinnerDemo-SwiftSpinner */;
+			targetProxy = AE64AD1AF98750209FD33859 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0274612271C26FCCF397AC87 /* Debug */ = {
+		3E10D69F71A3F398C8AB60D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95371B4F507ECB47252B91EA /* Pods-SwiftSpinnerDemo-SwiftSpinner-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftSpinnerDemo-SwiftSpinner/Pods-SwiftSpinnerDemo-SwiftSpinner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftSpinnerDemo-SwiftSpinner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftSpinnerDemo-SwiftSpinner/Pods-SwiftSpinnerDemo-SwiftSpinner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftSpinner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3E2CDDEC95EDC125E2DD82B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F19C1F3C91FA3F08F6ADDCAC /* Pods-SwiftSpinnerDemo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftSpinnerDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftSpinnerDemo/Pods-SwiftSpinnerDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SwiftSpinnerDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		59AC89DC83028E83ABB5261B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -332,9 +505,9 @@
 			};
 			name = Debug;
 		};
-		626A83C7CCE35E12CF344FEB /* Release */ = {
+		610D70DE426642AA89720CAD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F86668222232AFA0A83E9EDF /* Pods-SwiftSpinnerDemo-SwiftSpinner-Private.xcconfig */;
+			baseConfigurationReference = 794CFFD033AD31A17F154C35 /* Pods-SwiftSpinnerDemo-DBImageColorPicker-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -343,14 +516,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftSpinnerDemo-SwiftSpinner/Pods-SwiftSpinnerDemo-SwiftSpinner-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-SwiftSpinnerDemo-SwiftSpinner/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftSpinnerDemo-DBImageColorPicker/Pods-SwiftSpinnerDemo-DBImageColorPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftSpinnerDemo-DBImageColorPicker/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-SwiftSpinnerDemo-SwiftSpinner/Pods-SwiftSpinnerDemo-SwiftSpinner.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftSpinnerDemo-DBImageColorPicker/Pods-SwiftSpinnerDemo-DBImageColorPicker.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftSpinner;
+				PRODUCT_NAME = DBImageColorPicker;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,9 +532,9 @@
 			};
 			name = Release;
 		};
-		7DA4DCFD52DD031A8D31E705 /* Debug */ = {
+		BF2B9EF61D7633663FA24F9F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F86668222232AFA0A83E9EDF /* Pods-SwiftSpinnerDemo-SwiftSpinner-Private.xcconfig */;
+			baseConfigurationReference = 794CFFD033AD31A17F154C35 /* Pods-SwiftSpinnerDemo-DBImageColorPicker-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -370,53 +543,23 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftSpinnerDemo-SwiftSpinner/Pods-SwiftSpinnerDemo-SwiftSpinner-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-SwiftSpinnerDemo-SwiftSpinner/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftSpinnerDemo-DBImageColorPicker/Pods-SwiftSpinnerDemo-DBImageColorPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftSpinnerDemo-DBImageColorPicker/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-SwiftSpinnerDemo-SwiftSpinner/Pods-SwiftSpinnerDemo-SwiftSpinner.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftSpinnerDemo-DBImageColorPicker/Pods-SwiftSpinnerDemo-DBImageColorPicker.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftSpinner;
+				PRODUCT_NAME = DBImageColorPicker;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		A418A9F4E9F22098F982DD58 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6FAE3514545CD31C01707FD /* Pods-SwiftSpinnerDemo.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-SwiftSpinnerDemo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-SwiftSpinnerDemo/Pods-SwiftSpinnerDemo.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_SwiftSpinnerDemo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AAE9DE014AEEC1A7719A7948 /* Release */ = {
+		F2A06394A7E69AE8A0242660 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -450,9 +593,37 @@
 			};
 			name = Release;
 		};
-		AFD89545AE51B7380620849B /* Debug */ = {
+		FDF3E9446E3101D338DF68A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0395556D57E013FCD3DCDB8 /* Pods-SwiftSpinnerDemo.debug.xcconfig */;
+			baseConfigurationReference = 95371B4F507ECB47252B91EA /* Pods-SwiftSpinnerDemo-SwiftSpinner-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftSpinnerDemo-SwiftSpinner/Pods-SwiftSpinnerDemo-SwiftSpinner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftSpinnerDemo-SwiftSpinner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftSpinnerDemo-SwiftSpinner/Pods-SwiftSpinnerDemo-SwiftSpinner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftSpinner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FF1BF6200C8E96365041B9BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63440A20193FE48E6643F5C6 /* Pods-SwiftSpinnerDemo.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -466,51 +637,59 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Pods-SwiftSpinnerDemo/Pods-SwiftSpinnerDemo.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = Pods_SwiftSpinnerDemo;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		182B67B52D7DE14EB90A8809 /* Build configuration list for PBXNativeTarget "Pods-SwiftSpinnerDemo-SwiftSpinner" */ = {
+		018E7B3311EB4DD1E58D3E40 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7DA4DCFD52DD031A8D31E705 /* Debug */,
-				626A83C7CCE35E12CF344FEB /* Release */,
+				59AC89DC83028E83ABB5261B /* Debug */,
+				F2A06394A7E69AE8A0242660 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		39A24ED01F24934574A7C80C /* Build configuration list for PBXProject "Pods" */ = {
+		5183000FAE8DDF0C7C026FBC /* Build configuration list for PBXNativeTarget "Pods-SwiftSpinnerDemo-SwiftSpinner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0274612271C26FCCF397AC87 /* Debug */,
-				AAE9DE014AEEC1A7719A7948 /* Release */,
+				FDF3E9446E3101D338DF68A8 /* Debug */,
+				3E10D69F71A3F398C8AB60D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79CE17A9E73D4DACF9C209C9 /* Build configuration list for PBXNativeTarget "Pods-SwiftSpinnerDemo" */ = {
+		7196886C6DF0BF207763CDDC /* Build configuration list for PBXNativeTarget "Pods-SwiftSpinnerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AFD89545AE51B7380620849B /* Debug */,
-				A418A9F4E9F22098F982DD58 /* Release */,
+				3E2CDDEC95EDC125E2DD82B7 /* Debug */,
+				FF1BF6200C8E96365041B9BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B84A7DA244D68B5D63D097AD /* Build configuration list for PBXNativeTarget "Pods-SwiftSpinnerDemo-DBImageColorPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF2B9EF61D7633663FA24F9F /* Debug */,
+				610D70DE426642AA89720CAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 284DCEBF2F703C6415D006EF /* Project object */;
+	rootObject = 41E995A2F37B04199897CDA4 /* Project object */;
 }

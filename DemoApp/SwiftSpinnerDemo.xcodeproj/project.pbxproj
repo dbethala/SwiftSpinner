@@ -14,6 +14,9 @@
 		9C6D4F1D1A6BFE8500B10961 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C6D4F1B1A6BFE8500B10961 /* LaunchScreen.xib */; };
 		9C6D4F291A6BFE8500B10961 /* SwiftSpinnerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D4F281A6BFE8500B10961 /* SwiftSpinnerDemoTests.swift */; };
 		BAB7CFF9FC1DACFCDAB95C84 /* Pods_SwiftSpinnerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58C7ECEFE04EA0294B00353 /* Pods_SwiftSpinnerDemo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D344B6E41AE8116100E054F9 /* ViewController_DC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D344B6E31AE8116100E054F9 /* ViewController_DC.swift */; };
+		D344B6E61AE8133B00E054F9 /* ViewController_MCB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D344B6E51AE8133B00E054F9 /* ViewController_MCB.swift */; };
+		D3EE07441AE7F4CA00A6DFFD /* ViewController_BG.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE07431AE7F4CA00A6DFFD /* ViewController_BG.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,10 @@
 		9C6D4F221A6BFE8500B10961 /* SwiftSpinnerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSpinnerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6D4F271A6BFE8500B10961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C6D4F281A6BFE8500B10961 /* SwiftSpinnerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSpinnerDemoTests.swift; sourceTree = "<group>"; };
+		D344B6E31AE8116100E054F9 /* ViewController_DC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController_DC.swift; sourceTree = "<group>"; };
+		D344B6E51AE8133B00E054F9 /* ViewController_MCB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController_MCB.swift; sourceTree = "<group>"; };
+		D3EE07421AE7EEBC00A6DFFD /* SwiftSpinner-Bridging-Header-Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SwiftSpinner-Bridging-Header-Swift.h"; path = "../../../SwiftSpinner/DemoApp/SwiftSpinner-Bridging-Header-Swift.h"; sourceTree = "<group>"; };
+		D3EE07431AE7F4CA00A6DFFD /* ViewController_BG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController_BG.swift; sourceTree = "<group>"; };
 		F58C7ECEFE04EA0294B00353 /* Pods_SwiftSpinnerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSpinnerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -86,9 +93,13 @@
 			children = (
 				9C6D4F121A6BFE8500B10961 /* AppDelegate.swift */,
 				9C6D4F141A6BFE8500B10961 /* ViewController.swift */,
+				D3EE07431AE7F4CA00A6DFFD /* ViewController_BG.swift */,
+				D344B6E31AE8116100E054F9 /* ViewController_DC.swift */,
+				D344B6E51AE8133B00E054F9 /* ViewController_MCB.swift */,
 				9C6D4F161A6BFE8500B10961 /* Main.storyboard */,
 				9C6D4F191A6BFE8500B10961 /* Images.xcassets */,
 				9C6D4F1B1A6BFE8500B10961 /* LaunchScreen.xib */,
+				D3EE07421AE7EEBC00A6DFFD /* SwiftSpinner-Bridging-Header-Swift.h */,
 				9C6D4F101A6BFE8500B10961 /* Supporting Files */,
 			);
 			path = SwiftSpinnerDemo;
@@ -288,8 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D344B6E61AE8133B00E054F9 /* ViewController_MCB.swift in Sources */,
 				9C6D4F151A6BFE8500B10961 /* ViewController.swift in Sources */,
 				9C6D4F131A6BFE8500B10961 /* AppDelegate.swift in Sources */,
+				D3EE07441AE7F4CA00A6DFFD /* ViewController_BG.swift in Sources */,
+				D344B6E41AE8116100E054F9 /* ViewController_DC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +431,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftSpinnerDemo/SwiftSpinner-Bridging-Header-Swift.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Debug;
 		};
@@ -430,7 +446,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftSpinnerDemo/SwiftSpinner-Bridging-Header-Swift.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Release;
 		};

@@ -48,8 +48,10 @@ code_sign() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework 'DBImageColorPicker.framework'
   install_framework 'SwiftSpinner.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework 'DBImageColorPicker.framework'
   install_framework 'SwiftSpinner.framework'
 fi
